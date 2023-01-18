@@ -6,4 +6,5 @@ COPY . .
 
 FROM node:alpine
 COPY --from=build /app /app
+RUN apk add --no-cache bash vim
 WORKDIR /app
