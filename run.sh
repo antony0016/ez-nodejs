@@ -1,0 +1,1 @@
+sudo docker run -p 1234:1234
