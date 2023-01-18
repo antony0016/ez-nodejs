@@ -1,7 +1,7 @@
 FROM node:alpine AS build
 WORKDIR /app
 COPY package.json .
-RUN npm install && npm install ts-node
+RUN npm install && npm install ts-node nodemon
 COPY . .
 
 FROM node:alpine
